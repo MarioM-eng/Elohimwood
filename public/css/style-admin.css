@@ -1,0 +1,169 @@
+/*body{
+    min-height: 800px;
+}*/
+/*Clase para deshabilitar un elemento*/
+.none{
+    display: none;
+}
+.contenedor-admin{
+	position: relative;
+	max-width: 700px;
+    height: 300px;
+    margin:auto;
+    /*background-color: rgba(0,0,0,.5);
+    border-radius: 10px 10px 10px 10px;*/
+}
+
+.contenedor-admin .mod{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor-admin .mod div a{
+	text-decoration: none;
+}
+
+.contenedor-admin .mod div a:hover .opcion-admin{
+	box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.contenedor-admin .mod div a .ico-admin{
+	font-size: 2em;
+	color: coral;
+}
+
+.contenedor-admin .mod div .opcion-admin{
+	padding: 10%;
+}
+
+/*ACTUALIZAR DATOS DE EMPRESA*/
+.form-modE{
+    padding: 4%;
+}
+
+
+/*ACTUALIZAR DATOS DE USUARIO*/
+.contenedor-admin form{
+    padding: 10%;
+}
+
+#clave{
+    padding-right: 14%;
+}
+
+.inp-cl{
+    position: relative;
+}
+.ver{
+    position: absolute;
+    top: 23%;
+    right: 10%;
+}
+
+/*GALERÍA DE FOTOS*/
+/*BOTÓN AGREGAR ARTICULO*/
+
+.wrapbotonesagg-delete{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 180px;
+    padding: 10px;
+    text-decoration: none;
+}
+.iconmas{
+    min-width: 50px;
+    min-height: 50px;
+    position: relative;
+}
+
+.iconmas span{
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+}
+.iconmenos{
+    min-width: 50px;
+    min-height: 50px;
+    position: relative;
+}
+.iconmenos span{
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+}
+.iconmod{
+    min-height: 35px;
+    position: relative;
+}
+
+.iconmod span{
+    font-size: 1.5em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+}
+
+.wrap-masmenos{
+    position: fixed;
+    z-index: 1;
+    background: white;
+}
+
+.selector{
+    padding: 2%;
+}
+
+/*FIN BOTON AGREGAR */
+
+/*BOTON MODIFICAR DATOS IMAGEN*/
+
+.card-body a{
+    position: absolute;
+    top: 5px;
+    width: 20%;
+    background: rgb(253,253,253,70%);
+}
+
+.card-body a:hover{
+
+    transform: scale(1.1);
+
+    animation-name: iconomod;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;    
+}
+
+@keyframes iconomod{
+    from{
+        transform: scale(1);
+
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+/*FIN BOTON MODIFICAR DATOS IMAGEN*/
+
+/*TEXTO CATEGORIA DE LA IMAGEN*/
+
+.card-body .catImg::before{ 
+    font: 70% sans-serif;
+    content: "►";
+    color: #007bff;
+    margin-right: .25em;
+}
+
+/*FIN TEXTO CATEGORIA DE LA IMAGEN*/
